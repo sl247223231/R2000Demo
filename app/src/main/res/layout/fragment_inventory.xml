@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/titleTag"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/epc"
+            android:textColor="@color/red" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/tid"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/rssi"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/num"
+            android:textColor="@color/peru" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_10"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/inventoryState" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/num_tv" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/speed_tv" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/total_tv" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/runTime" />
+
+            <Button
+                android:id="@+id/inventory_start_btn"
+                style="@style/ButtonStyle"
+                android:text="@string/button_inventory_start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/state"
+                style="@style/TextBlueStyle" />
+
+            <TextView
+                android:id="@+id/tagNum_tv"
+                style="@style/TextBlueStyle"
+                android:text="@string/hint" />
+
+            <TextView
+                android:id="@+id/speed_tv"
+                style="@style/TextBlueStyle"
+                android:text="@string/hint" />
+
+            <TextView
+                android:id="@+id/total_tv"
+                style="@style/TextBlueStyle"
+                android:text="@string/hint" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                style="@style/TextBlueStyle"
+                android:text="@string/hint" />
+
+            <Button
+                android:id="@+id/inventory_stop_btn"
+                style="@style/ButtonStyle"
+                android:text="@string/button_inventory_stop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView style="@style/TextBlueStyle" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/unit_tab" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/unit_speed" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/unit_total" />
+
+            <TextView
+                style="@style/TextBlueStyle"
+                android:text="@string/millisecond" />
+
+            <Button
+                android:id="@+id/inventory_clear_btn"
+                style="@style/ButtonStyle"
+                android:text="@string/button_inventory_clear" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_checking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/show_layout"
+        android:layout_below="@id/titleTag"
+        android:transcriptMode="alwaysScroll" />
+
+</RelativeLayout>

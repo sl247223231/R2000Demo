@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:padding="@dimen/margin_10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/power_link" />
+
+        <Spinner
+            android:id="@+id/power_link"
+            style="@style/SpinnerDefaultStyle"
+            android:layout_width="match_parent"
+            android:entries="@array/power_link" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/set_link"
+        style="@style/ButtonStyle"
+        android:text="@string/set_link" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/frequency_area" />
+
+        <Spinner
+            android:id="@+id/frequency_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:entries="@array/frequency_area" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/set_frequency_area"
+        style="@style/ButtonStyle"
+        android:text="@string/set_frequency_area" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/show_value" />
+
+        <SeekBar
+            android:id="@+id/chose_power"
+            android:layout_width="@dimen/seekBar_width_210"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:max="100"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:progressDrawable="@drawable/seekbar_define_style"
+            android:thumb="@mipmap/power32" />
+
+        <TextView
+            android:id="@+id/seekbar_value"
+            style="@style/TextRedStyle"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:text="@string/hint" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/now_power"
+            style="@style/TextBlueStyle"
+            android:text="@string/current_power" />
+
+        <TextView
+            android:id="@+id/current_power"
+            style="@style/TextRedStyle"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_toRightOf="@id/now_power"
+            android:layout_toEndOf="@id/now_power"
+            android:text="@string/default_power" />
+
+        <Button
+            android:id="@+id/set_power"
+            style="@style/ButtonStyle"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@id/now_power"
+            android:text="@string/set_power"
+            android:layout_marginLeft="@dimen/margin_20" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

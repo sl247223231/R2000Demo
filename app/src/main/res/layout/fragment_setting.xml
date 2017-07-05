@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/margin_10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/check_type"/>
+
+        <Spinner
+            android:id="@+id/check_content"
+            style="@style/SpinnerDefaultStyle"
+            android:entries="@array/check_content"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/startAddress"/>
+
+        <EditText
+            android:id="@+id/offset"
+            style="@style/EditStyle"
+            android:ems="3"
+            android:inputType="number"
+            android:text="@string/hint"/>
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/tagLen"/>
+
+        <EditText
+            android:id="@+id/tagLen"
+            style="@style/EditStyle"
+            android:ems="3"
+            android:inputType="number"
+            android:text="6"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_content_save"
+        style="@style/ButtonStyle"
+        android:text="@string/save"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/isQuickInventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginStart="@dimen/margin_10"
+            android:scaleX="2"
+            android:scaleY="2"/>
+
+        <TextView
+            style="@style/TextBlueStyle"
+            android:text="@string/quickInventory"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

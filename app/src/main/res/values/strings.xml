@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">R2000Demo</string>
+
+
+    <string name="hint">0</string>
+    <string name="show_value">功率:</string>
+    <string name="current_power">当前功率:</string>
+    <string name="set_power">设置功率</string>
+    <string name="power_link">连接:</string>
+    <string name="set_link">设置连接</string>
+    <string name="default_power">0</string>
+    <string name="frequency_area">区域:</string>
+    <string name="set_frequency_area">设置区域</string>
+    <string name="frequency_point">频点:</string>
+    <string name="set_frequency">设置频点</string>
+    <string name="chose_area">选择区域:</string>
+    <string name="start_address">起始地址:</string>
+    <string name="chose_len">选择长度:</string>
+    <string name="password">访问密码:</string>
+    <string name="start_address_hint">2</string>
+    <string name="chose_len_hint">1</string>
+    <string name="password_hint">00000000</string>
+    <string name="read">读取</string>
+    <string name="write">写入</string>
+    <string name="destroy_password">销毁密码:</string>
+    <string name="access_password">访问密码:</string>
+    <string name="read_password">读取密码</string>
+    <string name="password_mode">密码类型:</string>
+    <string name="new_password">新密码:</string>
+    <string name="change_password">修改密码</string>
+    <string name="reset_setting">恢复出厂设置</string>
+    <string name="execute_btn">执行</string>
+    <string name="access_password_locking">访问密码区:</string>
+    <string name="destroy_password_locking">销毁密码区:</string>
+    <string name="EPC_locking">EPC区:</string>
+    <string name="TID_locking">TID区:</string>
+    <string name="USER_locking">USER区:</string>
+    <string name="btnFrequencyMinus">—</string>
+    <string name="btnFrequencyAdd">+</string>
+    <string name="write_et"> </string>
+    <string name="read_et"> </string>
+    <string name="state">设备已连接</string>
+    <string name="frequency_point_text">920</string>
+    <string name="mask">掩码:</string>
+    <string name="quickInventory">快速盘点模式</string>
+    <string name="extendInventory">扩展模式</string>
+    <string name="setMask">设置掩码</string>
+    <string name="DynamicAlgorithm">动态算法</string>
+    <string name="FixedAlgorithm">固定算法</string>
+    <string name="password_et">输入访问密码</string>
+    <string name="password_locking">访问密码:</string>
+    <string name="check_continue">继续盘点</string>
+    <string name="runTime">运行时间:</string>
+    <string name="millisecond">毫秒</string>
+    <string name="input_password">00000000</string>
+    <string name="input_tv">输入密码</string>
+    <string name="epc_tv">EPC:</string>
+    <string name="startAddress">起始地址</string>
+    <string name="tagLen">长度</string>
+
+
+    <!--MainActivity-->
+    <string name="connect_rb">连接</string>
+    <string name="inventory_rb">盘点</string>
+    <string name="setting_rb">设置</string>
+    <string name="power_rb">功率</string>
+    <string name="frequency_rb">频率</string>
+    <string name="rw_rb">读写</string>
+    <string name="permission_rb">权限</string>
+    <string name="locking_rb">锁定</string>
+
+
+    <!--Connect_Fragment-->
+    <string name="tv_title">电源管理</string>
+    <string name="tv_platform">平台</string>
+    <string name="tv_connect">连接模块</string>
+    <string name="tv_serial">串口</string>
+    <string name="button_connect">连接</string>
+
+    <!--Inventory_Fragment-->
+    <string name="num_tv">标签个数:</string>
+    <string name="inventoryState">盘点状态:</string>
+    <string name="epc">EPC</string>
+    <string name="tid">TID/USER</string>
+    <string name="rssi">RSSI</string>
+    <string name="num">个 数</string>
+    <string name="speed_tv">速率:</string>
+    <string name="total_tv">总数:</string>
+    <string name="unit_tab">个</string>
+    <string name="unit_speed">次/秒</string>
+    <string name="unit_total">个</string>
+    <string name="button_inventory_clear">清除</string>
+    <string name="button_inventory_stop">停止</string>
+    <string name="button_inventory_start">盘点</string>
+
+    <!--Setting_Fragment-->
+    <string name="check_type">盘点内容</string>
+    <string name="save">保存</string>
+    <string name="checkOnline">检测模块是否在线</string>
+    <string name="download">下载固件</string>
+
+    <!--Frequency_Fragment-->
+    <string name="tv_frequency_area">区域:</string>
+    <string name="button_set_frequency_area">设置区域</string>
+    <string name="tv_frequency_point">频点:</string>
+    <string name="button_set_frequency">设置频点</string>
+    <string name="tv_frequency_point_text">920</string>
+    <string name="button_get_frequency">获取频点</string>
+    <string name="tv_units">MHz</string>
+    <string name="tv_frequency_now">获取频点</string>
+
+
+    <!--Power_Fragment-->
+    <string name="tv_show_value">显示值</string>
+    <string name="tv_chose_power">选择</string>
+    <string name="tv_current_power">当前功率:</string>
+    <string name="button_set_power">设置功率</string>
+    <string name="button_get_power">获取功率</string>
+    <string name="FastID">fastId</string>
+    <string name="RM_LG43">dev/ttyMSM2</string>
+    <string name="RM_ZD07">dev/ttySAC2</string>
+    <string name="RM_KT45">dev/ttyMT2</string>
+    <string name="RM_KT45Q">dev/ttyMT2</string>
+    <string name="RM_XT07">dev/ttysWK2</string>
+    <string name="RM_KT80">dev/ttyMT2</string>
+
+
+    <string-array name="check_content">
+        <item>EPC</item>
+        <item>EPC+TID</item>
+        <item>EPC+USER</item>
+    </string-array>
+
+    <string-array name="power_link">
+        <item> 0:DSB_ASK/M0/40khz</item>
+        <item>1:PR_ASK/M2/250khz</item>
+        <item>2:PR_ASK/M2/300khz</item>
+        <item>3:DSB_ASK/M0/400khz</item>
+    </string-array>
+    <string-array name="frequency_area">
+        <item>840&#8211;845(China)</item>
+        <item>920&#8211;925(China)</item>
+        <item>902&#8211;928(开放频段)</item>
+        <item>865&#8211;868(Euro)</item>
+    </string-array>
+    <string-array name="chose_area">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="password_mode">
+        <item>销毁密码</item>
+        <item>访问密码</item>
+    </string-array>
+    <string-array name="password_locking">
+        <item>No change</item>
+        <item>Accessible</item>
+        <item>Always Accessible</item>
+        <item>Secured Accessible</item>
+        <item>Always not Accessible</item>
+    </string-array>
+    <string-array name="rw_locking">
+        <item>No change</item>
+        <item>WriteAble</item>
+        <item>Always WriteAble</item>
+        <item>Secured WriteAble</item>
+        <item>Always not WriteAble</item>
+    </string-array>
+
+
+    <string-array name="arr_platform">
+        <item>RM_LG43</item>
+        <item>RM_ZD07</item>
+        <item>RM_KT45</item>
+        <item>RM_KT45Q</item>
+        <item>RM_XT07</item>
+        <item>RM_KT80</item>
+    </string-array>
+
+
+</resources>

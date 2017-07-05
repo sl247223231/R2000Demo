@@ -1,0 +1,19 @@
+<resources>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <!--ConnectDialog-->
+  <dimen name="connectDialog_text_size">20sp</dimen>
+  <!--Connect_Fragment-->
+  <dimen name="connectFragment_button_size">16sp</dimen>
+ 
+  <!--通用-->
+  <dimen name="margin_10">10dp</dimen>
+  <dimen name="margin_20">20dp</dimen>
+  <!--style-->
+  <dimen name="spinner_width_100">100dp</dimen>
+  <dimen name="spinner_height_50">50dp</dimen>
+  <dimen name="edit_width_100">100dp</dimen>
+  <dimen name="seekBar_width_210">210dp</dimen>
+  <dimen name="TextSize">16sp</dimen>
+  <dimen name="mainDialog_w">250dp</dimen>
+
+</resources>

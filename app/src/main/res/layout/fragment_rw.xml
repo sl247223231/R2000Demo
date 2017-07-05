@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="@dimen/margin_10">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextBlueStyle"
+      android:text="@string/chose_area" />
+
+    <Spinner
+      android:id="@+id/chose_area"
+      style="@style/SpinnerDefaultStyle"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:entries="@array/chose_area" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextBlueStyle"
+      android:text="@string/start_address" />
+
+    <EditText
+      android:id="@+id/start_address"
+      style="@style/EditStyle"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:inputType="number"
+      android:text="@string/start_address_hint" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextBlueStyle"
+      android:text="@string/chose_len" />
+
+    <EditText
+      android:id="@+id/chose_len"
+      style="@style/EditStyle"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:inputType="number"
+      android:text="@string/chose_len_hint" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextBlueStyle"
+      android:text="@string/password" />
+
+    <EditText
+      android:id="@+id/visit_word"
+      style="@style/EditStyle"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:inputType="number"
+      android:text="@string/password_hint" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+      android:id="@+id/isMask"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      style="@style/TextBlueStyle"
+      android:text="@string/mask" />
+
+    <EditText
+      android:id="@+id/mask"
+      style="@style/EditStyle"
+      android:layout_width="220dp"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10" />
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/setMask"
+    style="@style/ButtonStyle"
+    android:text="@string/setMask"
+    android:textSize="16sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/read"
+      style="@style/ButtonStyle"
+      android:text="@string/read" />
+
+    <EditText
+      android:id="@+id/read_et"
+      style="@style/EditStyle"
+      android:layout_width="220dp"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:inputType="text"
+      android:text="@string/read_et" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/TextBlueStyle"
+      android:text="@string/epc_tv" />
+
+    <EditText
+      android:id="@+id/read_epc_et"
+      style="@style/EditStyle"
+      android:layout_width="match_parent"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:inputType="text"
+      android:text="@string/read_et" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/write"
+      style="@style/ButtonStyle"
+      android:text="@string/write" />
+
+    <EditText
+      android:id="@+id/write_et"
+      style="@style/EditStyle"
+      android:layout_width="220dp"
+      android:layout_marginLeft="@dimen/margin_10"
+      android:layout_marginStart="@dimen/margin_10"
+      android:inputType="text"
+      android:text="@string/write_et" />
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/execute_btn"
+        style="@style/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/execute_btn" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/execute_btn"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/TextLockingStyle"
+                android:text="@string/access_password_locking" />
+
+            <TextView
+                style="@style/TextLockingStyle"
+                android:text="@string/destroy_password_locking" />
+
+            <TextView
+                style="@style/TextLockingStyle"
+                android:text="@string/EPC_locking" />
+
+            <TextView
+                style="@style/TextLockingStyle"
+                android:text="@string/TID_locking" />
+
+            <TextView
+                style="@style/TextLockingStyle"
+                android:text="@string/USER_locking" />
+
+            <TextView
+                style="@style/TextLockingStyle"
+                android:text="@string/password_locking" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/access_password_locking"
+                style="@style/SpinnerLockingStyle"
+                android:entries="@array/password_locking" />
+
+            <Spinner
+                android:id="@+id/destroy_password_locking"
+                style="@style/SpinnerLockingStyle"
+                android:entries="@array/password_locking" />
+
+            <Spinner
+                android:id="@+id/EPC_locking"
+                style="@style/SpinnerLockingStyle"
+                android:entries="@array/rw_locking" />
+
+            <Spinner
+                android:id="@+id/TID_locking"
+                style="@style/SpinnerLockingStyle"
+                android:entries="@array/rw_locking" />
+
+            <Spinner
+                android:id="@+id/USER_locking"
+                style="@style/SpinnerLockingStyle"
+                android:entries="@array/rw_locking" />
+
+            <EditText
+                android:id="@+id/pss_locking"
+                style="@style/SpinnerLockingStyle"
+                android:layout_width="220dp"
+                android:hint="@string/password_et" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

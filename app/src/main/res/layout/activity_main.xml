@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uhf.r2000demo.MainActivity">
+
+    <TextView
+        android:id="@+id/deviceState"
+        style="@style/TextDarkOliveGreenStyle" />
+
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/connect_rb"
+            style="@style/RadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@mipmap/qtm_inventory"
+            android:text="@string/connect_rb"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/inventory_rb"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/qtm_inventory"
+            android:text="@string/inventory_rb"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/setting_rb"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/qtm_set"
+            android:text="@string/setting_rb"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/power_rb"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/qtm_power"
+            android:text="@string/power_rb"
+            android:textSize="20sp" />
+
+
+        <RadioButton
+            android:id="@+id/rw_rb"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/qtm_readwrite"
+            android:text="@string/rw_rb"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/permission_rb"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/qtm_permission"
+            android:text="@string/permission_rb"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/locking_rb"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@mipmap/qtm_lock"
+            android:text="@string/locking_rb"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_rg"
+        android:layout_below="@id/deviceState"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>
